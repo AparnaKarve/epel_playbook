@@ -1,0 +1,9 @@
+
+---
+- name: use galaxy epel role
+  hosts: all 
+  user: ansible
+  become: true
+
+  roles:
+    - role: geerlingguy.repo-epel 
